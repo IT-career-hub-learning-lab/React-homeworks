@@ -1,0 +1,84 @@
+.page {
+  min-height: 100vh;
+  padding: 60px 24px;
+  background-color: #f3f5f9;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0 0 40px;
+  color: #202938;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(30, 45, 70, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(30, 45, 70, 0.12);
+}
+
+.personInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.personName {
+  margin: 0;
+  color: #263449;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.personAge {
+  margin: 0;
+  color: #788397;
+  font-size: 15px;
+}
+
+.deleteButton {
+  width: 100%;
+  padding: 11px 16px;
+  color: #d93645;
+  background-color: #fff0f1;
+  border: 1px solid #ffdadd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.deleteButton:hover {
+  color: #ffffff;
+  background-color: #d93645;
+}
